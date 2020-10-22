@@ -18,6 +18,7 @@ export default function CountriesList({ data }) {
           capital={country.capital}
           image={country.img}
           description={country.description}
+          lien={country.link}
         />
       ))}
     </ul>

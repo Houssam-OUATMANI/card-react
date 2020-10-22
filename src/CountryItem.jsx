@@ -1,6 +1,13 @@
 import React from "react";
 
-export default function CountryItem({ image, name, id, capital, description }) {
+export default function CountryItem({
+  image,
+  name,
+  id,
+  capital,
+  description,
+  lien
+}) {
   return (
     <li>
       <div className="card" style={{ width: "20rem" }}>
@@ -8,7 +15,9 @@ export default function CountryItem({ image, name, id, capital, description }) {
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p className="card-text">{description}</p>
-          <input type="text" className="btn btn-primary" value="Commander" />
+          <a href={lien} className btn btn-success>
+            En savoir plus
+          </a>
         </div>
       </div>
     </li>
